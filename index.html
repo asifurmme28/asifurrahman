@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Md Asifur Rahman | Metallurgical Engineer</title>
+<meta name="description" content="Metallurgical engineer in foundry melting operations at ETC Foundry, Sharjah, UAE.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:dark;
+  --black:#0a0605; --bg:#140c08; --panel:#1e130c; --line:#3b2a1e;
+  --ink:#f3e7d8; --muted:#bba895; --orange:#f07a2a; --orange-d:#c85f17;
+  --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --sans:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--orange);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.4rem}
+
+/* nav */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:rgba(10,6,5,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:.8rem 1.4rem;max-width:1080px;margin:0 auto}
+.brand{font:600 1.35rem/1 var(--serif);text-decoration:none;letter-spacing:.02em}
+nav ul{display:flex;gap:1.4rem;list-style:none;margin:0;padding:0;font-size:.92rem}
+nav ul a{text-decoration:none;color:var(--muted)}
+nav ul a:hover{color:var(--orange)}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:var(--black);border-bottom:1px solid var(--line)}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(55% 90% at 85% 105%,rgba(240,122,42,.42),transparent 70%),radial-gradient(40% 60% at 10% -10%,rgba(120,60,25,.35),transparent 70%);animation:glow 6s ease-in-out infinite alternate}
+@keyframes glow{from{opacity:.7}to{opacity:1}}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.5fr 1fr;gap:3rem;align-items:center;padding-top:5rem;padding-bottom:5rem}
+.role{color:var(--orange);font-weight:500;margin:0 0 1rem}
+h1{font:600 clamp(3rem,8vw,6rem)/.95 var(--serif);margin:0 0 1.4rem;letter-spacing:-.01em}
+.lede{font-size:1.15rem;color:#e2d3c1;max-width:34rem;margin:0 0 2rem}
+.btns{display:flex;gap:.8rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.85rem 1.5rem;border-radius:999px;text-decoration:none;font-weight:600;font-size:.95rem;border:1.5px solid var(--orange);transition:background .2s,color .2s}
+.btn.solid{background:var(--orange);color:#1a0d05}
+.btn.solid:hover{background:var(--orange-d)}
+.btn.ghost:hover{background:rgba(240,122,42,.14)}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin:2.2rem 0 0;padding:0;list-style:none}
+.chips li{border:1px solid var(--line);background:rgba(30,19,12,.7);padding:.3rem .85rem;border-radius:999px;font-size:.85rem;color:var(--muted)}
+.mono{justify-self:center;width:min(300px,70vw);aspect-ratio:1;border-radius:50%;border:2px solid var(--orange);display:grid;place-items:center;background:radial-gradient(circle at 50% 70%,rgba(240,122,42,.38),var(--panel) 68%);box-shadow:0 0 0 12px rgba(240,122,42,.08),0 30px 80px rgba(240,122,42,.18)}
+.mono span{font:600 5.5rem/1 var(--serif);letter-spacing:.04em}
+
+/* sections */
+section{padding:5rem 0;border-bottom:1px solid var(--line)}
+h2{font:600 clamp(2rem,4.5vw,3rem)/1.1 var(--serif);margin:0 0 .6rem}
+.sub{color:var(--muted);max-width:38rem;margin:0 0 2.6rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2rem 2.4rem}
+.grid article{border-top:2px solid var(--orange);padding-top:1.1rem}
+h3{font:600 1.5rem/1.2 var(--serif);margin:0 0 .5rem}
+.grid p,.tl p{margin:0;color:var(--muted);font-size:.98rem}
+
+/* timeline */
+.tl{list-style:none;margin:0;padding:0 0 0 1.6rem;border-left:1px solid var(--line)}
+.tl li{position:relative;padding:0 0 2.2rem}
+.tl li:last-child{padding-bottom:0}
+.tl li::before{content:"";position:absolute;left:calc(-1.6rem - 6px);top:.55rem;width:11px;height:11px;border-radius:50%;background:var(--orange);box-shadow:0 0 0 4px var(--bg)}
+.when{color:var(--orange);font-size:.9rem;font-weight:500;margin:0 0 .15rem}
+.tl h3{margin-bottom:.1rem}
+.where{margin:0 0 .5rem;color:var(--ink);font-size:.95rem}
+
+/* research */
+.paper{display:grid;grid-template-columns:1.3fr 1fr;gap:2.5rem;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:2.2rem}
+.paper p{color:var(--muted);margin:0 0 1rem;font-size:.98rem}
+.facts{margin:0;display:grid;gap:1.1rem;align-content:start}
+.facts div{border-left:2px solid var(--orange);padding-left:1rem}
+.facts dt{color:var(--muted);font-size:.85rem}
+.facts dd{margin:0;font:600 1.5rem/1.2 var(--serif)}
+
+/* contact */
+.contact{text-align:left;border-bottom:0}
+.contact h2{max-width:20ch}
+footer{background:var(--black);border-top:1px solid var(--line);padding:1.6rem 0 2rem;color:var(--muted);font-size:.88rem}
+footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+
+@media (max-width:760px){
+  .hero .wrap{grid-template-columns:1fr;padding-top:3.2rem;padding-bottom:3.5rem}
+  .mono{order:-1;width:150px}.mono span{font-size:3rem}
+  .paper{grid-template-columns:1fr;padding:1.5rem}
+  section{padding:3.5rem 0}
+  nav ul{gap:1rem}
+}
+@media (prefers-reduced-motion:reduce){.hero::before{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+  <nav aria-label="Main">
+    <a class="brand" href="#top">Asifur Rahman</a>
+    <ul>
+      <li><a href="#work">Expertise</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <p class="role">Production Engineer, Melting Operations</p>
+        <h1>Md Asifur Rahman</h1>
+        <p class="lede">Metallurgical engineer at ETC Foundry in Sharjah. I run induction melting, control melt chemistry and tune furnace cycles so steel castings meet specification.</p>
+        <div class="btns">
+          <a class="btn solid" href="#experience">See my experience</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/asifur-rahman28" target="_blank" rel="noopener">Connect on LinkedIn</a>
+        </div>
+        <ul class="chips">
+          <li>Induction melting</li><li>Melt chemistry</li><li>Spectrometry (OES)</li><li>Defect analysis</li><li>Heat treatment</li>
+        </ul>
+      </div>
+      <div class="mono" aria-hidden="true"><span>AR</span></div>
+    </div>
+  </div>
+
+  <section id="work">
+    <div class="wrap">
+      <h2>What I work on</h2>
+      <p class="sub">Day to day I connect furnace practice with metallurgy: what goes into the charge, what the spectrometer says, and how the heat behaves in the mold.</p>
+      <div class="grid">
+        <article><h3>Foundry operations and melting</h3><p>Induction and arc furnace operation, charge calculation, slag management, and liquid metal treatment such as degassing, deoxidation and inoculation.</p></article>
+        <article><h3>Metallurgical quality control</h3><p>Thermal analysis, optical emission spectrometry, defect analysis for porosity, inclusions and shrinkage, and microstructural characterization.</p></article>
+        <article><h3>Process optimization</h3><p>Yield improvement, energy efficiency in high-temperature processing, scrap reduction, and safe shop-floor practice.</p></article>
+        <article><h3>Engineering fundamentals</h3><p>Phase diagrams, solidification kinetics, heat treatment, alloy design and failure analysis.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <h2>Experience</h2>
+      <p class="sub">From non-destructive testing and steel plant training to running melts on the foundry floor.</p>
+      <ol class="tl">
+        <li>
+          <p class="when">September 2026 to present</p>
+          <h3>Production Engineer</h3>
+          <p class="where">Emirates Technology Castings FZE (ETC Foundry), Sharjah</p>
+          <p>Manage daily melting and pouring schedules for 2 to 10 ton furnaces feeding the casting lines. Optimize melt cycles and tap-to-tap times to cut energy use and downtime. Calculate furnace charges and verify spectrometer chemistry for high-grade steel alloys.</p>
+        </li>
+        <li>
+          <p class="when">May 2022 to May 2023</p>
+          <h3>Undergraduate Researcher</h3>
+          <p class="where">Bangladesh University of Engineering and Technology, Dhaka</p>
+          <p>Thesis on magnesium-doped lanthanum calcium manganite, using solid-state synthesis, XRD and PPMS measurements.</p>
+        </li>
+        <li>
+          <p class="when">May to June 2022</p>
+          <h3>Industrial Trainee</h3>
+          <p class="where">Abul Khair Steel, Sitakunda, Chattogram</p>
+          <p>Followed the full steel route: electric arc furnace melting, ladle refining and casting, rolling, quality control and scrap management.</p>
+        </li>
+        <li>
+          <p class="when">June 2018</p>
+          <h3>Industrial Visit</h3>
+          <p class="where">Bangladesh Atomic Energy Commission, Dhaka</p>
+          <p>Hands-on exposure to dye penetrant, eddy current, magnetic particle, ultrasonic and radiographic testing.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="research">
+    <div class="wrap">
+      <h2>Research</h2>
+      <p class="sub">My undergraduate thesis at BUET studied how magnesium changes the magnetic behavior of a manganite.</p>
+      <div class="paper">
+        <div>
+          <h3>Effect of Mg doping on La<sub>0.6</sub>Mg<sub>x</sub>Ca<sub>1-x</sub>MnO<sub>3</sub></h3>
+          <p>Three compositions (x = 0, 0.1, 0.2) were made by solid-state reaction. Room temperature XRD showed an orthorhombic structure in every sample. More Mg shrinks the lattice parameters and Mn-O-Mn bond angles, which weakens ferromagnetism through the double-exchange mechanism.</p>
+          <p>All samples show a second-order ferromagnetic to paramagnetic transition. The magnetocaloric effect, measured through entropy change and relative cooling power, grows with Mg content.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>Curie temperature</dt><dd>281.36 K down to 220.5 K</dd></div>
+          <div><dt>Entropy change and cooling power</dt><dd>Both increase with Mg</dd></div>
+          <div><dt>Method</dt><dd>Solid-state reaction, XRD, PPMS</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Let's talk melting, castings and materials</h2>
+      <p class="sub">I'm based in Sharjah, UAE. The quickest way to reach me is LinkedIn.</p>
+      <div class="btns">
+        <a class="btn solid" href="https://www.linkedin.com/in/asifur-rahman28" target="_blank" rel="noopener">Message me on LinkedIn</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap"><span>Md Asifur Rahman</span><span>Sharjah, United Arab Emirates</span></div>
+</footer>
+</body>
+</html>
